@@ -23,6 +23,8 @@ void	repeat_alpha(char *str)
 			print_char_nb(str[i], str[i] - 97);
 		else if (str[i] >= 'A' && str[i] <= 'Z')
 			print_char_nb(str[i], str[i] - 65);
+		else
+			write(1, &str[i], 1);
 		i++;
 	}
 	write(1, "\n", 1);
