@@ -1,16 +1,17 @@
-char	*ft_strrev(char *str)
+char *ft_strrev(char *str)
 {
-	int		i;
-	int		len;
-	char	tmp;
+	int	i = 0;
+	int	len = 0;
+	char tmp;
 
-	while (str[len])
+	while (str[len] != '\0')
 		len++;
-	while (++i < len / 2)
+	while (i < len / 2)
 	{
 		tmp = str[i];
 		str[i] = str[len - 1 - i];
 		str[len - 1 - i] = tmp;
+		i++;
 	}
 	return (str);
 }
