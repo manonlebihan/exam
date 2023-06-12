@@ -14,11 +14,9 @@ void ft_putstr(char const *str)
 
 int	main(int argc, char const *argv[])
 {
-	int i;
-	int j;
+	int i = 0;
+	int	j = 0;
 
-	i = 0;
-	j = 0;
 	if (argc == 3)
 	{
 		while (argv[2][j])
